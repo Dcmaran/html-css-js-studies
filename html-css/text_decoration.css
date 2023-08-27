@@ -1,0 +1,62 @@
+.title {
+    text-decoration: line-through;
+}
+
+.some-text {
+    text-decoration:underline
+}
+
+.link {
+    text-decoration: none;
+    color: red;
+}
+
+.upper {
+    color: purple;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+
+.lower {
+    color: brown;
+    text-transform: lowercase;
+}
+
+.font {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.font1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.font2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.font3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.inline-box {
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    display: block;
+}
+
+.invisible {
+    display: none;
+}

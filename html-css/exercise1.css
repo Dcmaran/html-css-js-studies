@@ -1,0 +1,14 @@
+#box-model {
+    border: 10px solid red;
+    padding: 20px;
+    margin: 50px;
+    outline: 10px solid green;
+    background-color: aqua;
+}
+
+.sample-text {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    text-align: center;
+}
