@@ -1,0 +1,39 @@
+html {
+    background-color: rgb(98, 90, 90);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    background-color: antiquewhite;
+    padding: 50px;
+    margin: 50px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.desc{
+    text-align: center;
+    
+}
+
+.featured-image {
+    text-align: center;
+    padding: 20px;
+}
+
+.featured-image figcaption{
+    font-style: italic;
+}
+
+.biography-container {
+    background-color: rgb(152, 141, 127);
+    padding: 20px;
+    margin: 20px;
+    border: 1px;
+    border-style: dashed;
+}
+
+
