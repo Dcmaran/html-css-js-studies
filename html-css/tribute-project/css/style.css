@@ -29,11 +29,31 @@ html {
 }
 
 .biography-container {
-    background-color: rgb(152, 141, 127);
-    padding: 20px;
-    margin: 20px;
-    border: 1px;
-    border-style: dashed;
+    padding: 20px 0px;
+    margin: 20px 0px;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
 }
 
+.biography-container h2 {
+    font-size: 30px;
+    text-align: center;
+}
 
+.awards-container {
+    display: flex;
+}
+
+.awards-container h3{   
+    font-size: 30px;
+    text-align: center;
+}
+
+.awards-container li{
+    font-size: 20px;
+}
+
+.awards-title {
+    font-size: 30px;
+    text-align: center;
+}
