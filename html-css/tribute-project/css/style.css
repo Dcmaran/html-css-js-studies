@@ -42,11 +42,7 @@ html {
 
 .awards-container {
     display: flex;
-}
-
-.awards-container h3{   
-    font-size: 30px;
-    text-align: center;
+    background-color:;
 }
 
 .awards-container li{
@@ -56,4 +52,13 @@ html {
 .awards-title {
     font-size: 30px;
     text-align: center;
+}
+
+.award-image {
+    padding-left: 50px;
+}
+
+#awards-list {
+    color: 20px;
+    padding-top: 200px;
 }
