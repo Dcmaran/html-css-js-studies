@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>HTML Forms</h2>
+    <form action="register.pho" method="GET">
+        <div class="forms">
+            <label> Name: </label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="age"">Age:</label>
+            <input type="text" name="age">
+        </div>
+        <div>
+            <label for="job"> Select your job</label>
+            <select name="job">
+                <option value="engineer">Engineer</option>
+                <option value="professor">Professor</option>
+                <option value="student">Student</option>
+                <option value="devops" selected>DevOps</option>
+            </select>
+        </div>
+        <div>
+            <label for="item"> Select items</label>
+            <select name="items" multiple>
+                <option value="apple">Apple</option>
+                <option value="beans">Beans</option>
+                <option value="banana">Student</option>
+                <option value="juice" selected>DevOps</option>
+            </select>
+        </div>
+        <div>
+            <label for="comment">Write down below what you thought of the text </label>
+            <textarea name="comment" id="" cols="50" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Send">
+    </form>
+    
+    
+</body>
+</html>
