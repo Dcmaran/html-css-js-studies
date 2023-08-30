@@ -39,6 +39,48 @@
             <label for="comment">Write down below what you thought of the text </label>
             <textarea name="comment" id="" cols="50" rows="10"></textarea>
         </div>
+        <div>
+            <fieldset>
+                <legend>Fill in your information</legend>
+                <label for="firstname">Name:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">lastname:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+        <div>
+            <label for="flavor">Choose the flavor</label>
+            <input type="text" list="flavors" name="flavor">
+            
+            <datalist id="flavors">
+                <option value="lemon"></option>
+                <option value="orange"></option>
+                <option value="grape"></option>
+                <option value="strawberry"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="password">Type your password</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <input type="reset" value="Clean">
+        </div>
+        <div>
+            <label for="car_model">Select a car model: </label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="car_model">
+                <label for="bmw">bmw</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="renault" name="car_model">
+                <label for="renault">Renault</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="ford" name="car_model">
+                <label for="ford">Ford</label>
+            </div>
+        </div>
         <input type="submit" value="Send">
     </form>
     
