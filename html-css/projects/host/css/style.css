@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 80px;
+    background-color: #232a31;
+    padding: 0 2rem;
+}
+
+nav {
+    position: relative;
+
+}
+
+.navbar-items {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 25px;
+    
+}
+
+.navbar-items a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.navbar-items a:hover {
+    color: #ccc;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 15px;
+}
+
+.default-btn {
+    padding: 15px 20px;
+    background-color: #c45287;
+    border-radius: 5px;
+}
+
+.default-btn:hover{
+    background-color: #db7da9;
+}
+
+.main-banner {
+    background-image: url(https://t3.ftcdn.net/jpg/02/98/47/38/360_F_298473896_Vsz21xTwMtroEeeGgU8pL2vwt3N65pfR.jpg);
+    padding: 10rem 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-banner h1{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 80px;
+    padding-bottom: 10px;
+}
+.main-banner p {
+    color: #fff;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 20px;
+}
+
+.services-container {
+    padding: 5rem 0;
+}
+
+.services-container ul {
+    display: flex;
+    width: 90;
+    margin: 0 auto;
+}
+
+.services-container li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.fas {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
