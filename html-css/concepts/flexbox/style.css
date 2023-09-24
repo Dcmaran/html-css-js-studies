@@ -1,0 +1,179 @@
+.flex {
+    display: flex;
+    background-color: aqua;
+    margin-bottom: 50px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    margin-bottom: 50px;
+}
+
+.wrap {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+
+}
+
+.justify ,
+.space-between,
+.around,
+.end{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.justify .box,
+.space-between .box,
+.around .box,
+.end .box {
+    width: 50px;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.end{
+    justify-content: end;
+}
+
+.align-center,
+.align-end,
+.align-stretch {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid blueviolet;
+    height: 200px;
+}
+
+.align-center .box,
+.align-end .box,
+.align-stretch .box{
+    width: 50px;
+}
+
+.align-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.align-end{
+    align-items: end;
+    justify-content: end;
+}
+
+.align-stretch{
+    align-items: stretch;
+}
+
+.align-stretch .box{
+    height: auto;
+}
+
+.gap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+    gap: 20px;
+}
+
+.gap .box {
+    width: 32%;
+}
+
+.order {
+    display: flex;
+}
+
+#one {
+    order: 1;
+}
+
+#two {
+    order: 2;
+}
+
+#three {
+    order: 3;
+}
+
+.grow {
+    display: flex;
+}
+
+.grow .box{
+    flex: 1;
+}
+.grow .big {
+    flex: 2;
+}
+
+.basis{
+    display: flex;
+}
+
+.basis .box{
+    flex-basis: 20px;
+}
+
+.basis .big{
+    flex-grow: 1;
+}
+
+.shrink {
+    display: flex;
+}
+
+.shrink .box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .small {
+    flex-shrink: 2;
+}
+
+.shorthand {
+    display: flex;
+}
+
+.shorthand .box {
+    width: auto;
+    flex: 1 1 50px;
+}
+
+.shorthand .different{
+    flex: 3 1 400px;
+}
+
+.auto-aligment {
+    height: 400px;
+    display: flex;
+    border: 2px solid greenyellow;
+    align-items: flex-end;
+}
+
+.auto-aligment .different{
+    align-self: center;
+}
