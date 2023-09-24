@@ -86,3 +86,47 @@ else if (2 > 3) {
 else {
     console.log("Out if")
 }
+
+// 10 - Loops
+
+let i = 0;
+
+while (i < 5) {
+    console.log(`Repeat ${i}`);
+    i++;
+}
+
+let o = 10;
+do {
+    console.log(`O value = ${o}`)
+    o--;
+} while (o >= 1);
+
+for (let index = 0; index <= 10; index++) {
+    console.log("Loop...");
+    
+}
+
+// Continue 
+
+for (let i = 0; i < 10; i++) {
+    
+    if (i % 2 === 0) {
+        console.log(i + " is pair")
+        continue;
+    }
+    
+}
+
+// Switch case
+
+const job = "Engineer";
+
+switch (job) {
+    case "Engineer":
+        console.log("Job is: " + job);
+        break;
+
+    default:
+        break;
+}
