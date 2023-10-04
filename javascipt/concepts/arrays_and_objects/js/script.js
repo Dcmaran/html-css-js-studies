@@ -77,3 +77,54 @@ console.log(obj2);
 console.log(Object.keys(car));
 
 console.log(Object.entries(car));
+
+// 5 - Mutability
+
+const a = {
+    name: "Diogo"
+}
+
+const b = a;
+
+console.log(a);
+console.log(b);
+
+// 6 - Push and pop
+const myArray = ["a", "b", "c"];
+
+const savePop = myArray.pop();
+
+console.log(myArray);
+
+myArray.push("o", "u", 2);
+
+console.log(savePop)
+
+console.log(myArray);
+
+// 7 - Shift and unshift
+
+const letters = ["a", "b", "c"];
+
+const saveShift = letters.shift()
+
+console.log(saveShift);
+
+letters.unshift("z", "x");
+
+console.log(letters);
+
+// 8 - indexOf and lastIndexOf
+
+const myFruits = ["Apple", "Banana", "Grape", "Apple"];
+
+console.log(myFruits.indexOf("Apple"));
+console.log(myFruits.lastIndexOf("Apple"));
+
+// 9 - Slice
+
+const testSlice = ["a", "b", "c", "d", "e", "f"];
+
+const subArray = testSlice.slice(2,4 + 1)
+
+console.log(subArray);
