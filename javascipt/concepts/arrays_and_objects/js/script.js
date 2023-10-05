@@ -128,3 +128,103 @@ const testSlice = ["a", "b", "c", "d", "e", "f"];
 const subArray = testSlice.slice(2,4 + 1)
 
 console.log(subArray);
+
+// 10 - forEach
+
+const nums = [1, 2, 3, 4, 5];
+
+nums.forEach((number) => {
+    console.log(number);
+})
+
+const posts = [
+    {title: "First post", category: "PHP"},
+    {title: "Second post", category: "JS"},
+    {title: "Third post", category: "Python"},
+];
+
+posts.forEach((post) => {
+    console.log(`Showing post: ${post.title}, category: ${post.category}`);
+});
+
+// 11 - Includes
+
+const brands = ["bmw", "vw", "fiat"];
+
+console.log(brands.includes("fiat"));
+console.log(brands.includes("KIA"));
+
+// 12 - Reverse
+
+console.log(brands);
+console.log(brands.reverse());
+
+// 13 - String methods
+
+const testTrim = "  Hello \n "
+
+console.log(testTrim.trim());
+
+// 14 - padstart and padend
+
+const testPadStart = "1";
+
+const newNumber = testPadStart.padStart(4, 0);
+
+console.log(newNumber);
+
+// 15 - Join and split
+
+const myString = "Hello world it's me Dcmaran";
+
+const arraySplit = myString.split(" ");
+
+console.log(arraySplit);
+
+const arrayJoin = arraySplit.join(" ");
+
+console.log(arrayJoin);
+
+// 16 - repeat
+
+const word = "Testing ";
+
+console.log(word.repeat(5));
+
+// 17 - rest operator / rest parameters
+
+const infinitySum = (...args) => {
+    
+    let total = 0;
+
+    for (let index = 0; index < args.length; index++) {
+        total += args[index];
+    }
+
+    return total;
+};
+
+console.log(infinitySum(1, 2, 5, 10));
+
+// 18 - for of
+
+const forOfTest = [2, 5];
+let total = 0;
+
+for (num of forOfTest) {
+    total+= num;
+}
+
+console.log(total);
+
+// 19 - Destructuring
+
+const userDetails = {
+    firstName: "Diogo",
+    lastName: "Rodrigues",
+    job: "Dev",
+}
+
+const {firstName, lastName, job} = userDetails
+
+console.log(lastName);
