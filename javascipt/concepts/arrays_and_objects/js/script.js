@@ -228,3 +228,26 @@ const userDetails = {
 const {firstName, lastName, job} = userDetails
 
 console.log(lastName);
+
+// 20 - Destructuring
+
+const myList = ["plane", "submarine", "car"];
+
+const [vehicleA, vehicleB, vechicleC] = myList
+
+console.log(vehicleA);
+
+const myJSON = '{"name": "Diogo", "age": 31, "skills": ["php", "javascript", "python"]}';
+
+
+// 21 - From json to object
+
+const myObject = JSON.parse(myJSON);
+
+console.log(myObject);
+
+console.log(myObject.name);
+
+const myNewJson = JSON.stringify(myObject)
+
+console.log(myNewJson);
