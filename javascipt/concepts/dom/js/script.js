@@ -73,3 +73,29 @@ console.log(firstLink);
 firstLink.setAttribute("href", "https://www.google.com")
 
 firstLink.setAttribute("target", "_blank");
+
+// widh and height
+
+const footer = document.querySelector("footer");
+
+console.log(footer.offsetHeight);
+console.log(footer.offsetWidth);
+
+console.log(footer.clientHeight);
+console.log(footer.clientWidth);
+
+// element position
+
+const product1 = products[0];
+
+console.log(product1.getBoundingClientRect());
+
+mainContainer.style.color = "red";
+mainContainer.style.backgroundColor = "#dfdfdf";
+mainContainer.style.paddingBottom = "50px";
+
+// changing multiple elements style
+
+for(const li of itemsList) {
+    li.style.backgroundColor = "blue"
+}
