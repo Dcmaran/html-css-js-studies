@@ -59,3 +59,76 @@ a.addEventListener("click", (e) => {
     console.log("Removing default action");
 })
 
+// key events
+
+document.addEventListener("keydown", (e) => {
+    console.log(`the key pressed is ${e.key}`);
+});
+
+// mouse events
+
+const mouse = document.querySelector("#mouse")
+
+mouse.addEventListener("mouseup", () => {
+    console.log("Button was depressed");
+});
+
+mouse.addEventListener("mousedown", () => {
+    console.log("Button was pressed");
+});
+
+mouse.addEventListener("dblclick", () => {
+    console.log("Double click");
+});
+
+
+document.addEventListener("mousemove", (e) => {
+    //console.log(`axis ${e.x}`);
+})
+
+// scroll events
+
+window.addEventListener("scroll", (e) => {
+    if (window.scrollY > 200) {
+        console.log("Test");
+    }
+})
+
+// focus event
+
+const input = document.querySelector("#my-input")
+
+input.addEventListener("focus", (e) => {
+    console.log("Entered the input");
+});
+
+input.addEventListener("blur", (e) => {
+    console.log("Left the input");
+});
+
+// loading event
+
+window.addEventListener("load", () => {
+    console.log("The page loaded");
+})
+
+// debounce
+
+const debounce = (f, delay) => {
+
+    let timeout
+
+    return (...arguments) => {
+        if(timeout){
+            clearTimeout(timeout);
+        }
+
+        timeout = setTimeout(() => {
+            f.apply(arguments);
+        }, delay)
+    };
+};
+
+window.addEventListener("mousemove", debounce(() => {
+    console.log("Executing every 400ms");
+}, 400))
